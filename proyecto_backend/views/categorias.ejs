@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Equipos</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h3>Lista de equipos</h3>
+    <table>
+        <thead>
+            <th>Modalidades</th>
+        </thead>
+        <hr>
+        <tbody>
+            <% mod_data.forEach((mod) => {%>
+            <tr>
+                <td><%= mod %></td>
+            </tr>
+            <% }); %>
+        </tbody>
+    </table>
+
+    <table>
+        <h4>Categorias</h4>
+        <thead>
+            <th>Nombre</th>
+            <th>Modalidad</th>
+        </thead>
+        <hr>
+        <tbody>
+            <% cat_data.forEach((cat) => {%>
+            <tr>
+                <td><%= cat.cat_name %></td>
+                <td><%= cat.mod %></td>
+            </tr>
+            <% }); %>
+        </tbody>
+    </table>
+
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Equipos</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h3>Lista de equipos</h3>
+    <table>
+        <thead>
+            <th>nombre del equipo   </th>
+            <th>nombre del lider   </th>
+            <th>categoria</th>
+        </thead>
+        <hr>
+        <tbody>
+            <% data.forEach((equipo) => {%>
+            <tr>
+                <td><%= equipo.equi_name %></td>
+                <td><%= equipo.lider_name %></td>
+                <td><%= equipo.cat_id %></td>
+            </tr>
+            <% }); %>
+        </tbody>
+    </table>
+
+  </body>
+</html>
